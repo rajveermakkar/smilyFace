@@ -1,6 +1,7 @@
 body {
     background-color: black;
     color:white;
+    user-select: none;
   }
   #stop{
     display: inline;
@@ -123,4 +124,29 @@ body {
       transform: rotate(-45deg);
     }
   }
+@media only screen and (max-width:620px){
+  #box {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    animation-name: colorchange;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto auto;
+    margin-top:100px;
+  }
+  #stop{
+    display: inline;
+    font-family: helvetica;
+    font-size: 2em;
+    display:none;
+    margin:150px 10px 0px 10px;
+  }
+  #touch{
+    margin: 150px 10px 0px 10px ;
+    font-size:3em;
   
+}
